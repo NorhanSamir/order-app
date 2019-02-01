@@ -10,7 +10,7 @@
   <tr *ngFor="let order of orders.order_items">
     <td>{{order.name}}</td>
     <td>{{order.price}} EGP</td>
-    <td><app-counter [counter]=order.quantity></app-counter></td>
+    <td><app-counter [orderData]=order [counter]=order.quantity></app-counter></td>
   </tr>
 </tbody>
 

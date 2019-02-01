@@ -7,8 +7,20 @@ $main-color:#74c0e2;
 $main-grey:#f0f3f6;
 $font-color:#525f6e;
 $dark-grey:#d8dde3;
+//fonts
+@font-face {
+    font-family: 'semibold';
+    src:  url('src/assets/fonts/titilliumweb-semibold.ttf');
+       
+  }
+  @font-face {
+    font-family: 'regular';
+    src:  url('src/assets/fonts/titilliumweb-regular.ttf');
+       
+  }
 html{
     color: $font-color;
+    font-family: 'regular';
 }
 main{
     background-color: $main-grey;

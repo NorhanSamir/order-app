@@ -2,7 +2,7 @@
     <button class="half-circle-btn  left-radius"  (click)="decrement()">
         <span class="icon-minus-symbol"></span>
       </button>
-      <span class="counter-number">{{counter}}</span>
+      <input type="number"  class="counter-number"  [(ngModel)]="counter"/>
 
   <button class="half-circle-btn right-radius"  (click)="increment()"><span class="icon-add"></span></button>
   

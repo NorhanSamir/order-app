@@ -18,8 +18,8 @@ userName:string;
   }
   getOrders() {
     this.orders=[]
-    this.rest.getProducts().subscribe((data: {}) => {
-      console.log(data);
+    this.rest.getOrders().subscribe((data: {}) => {
+      //console.log(data);
       this.orders = data;
       this.resturantName=this.orders.restaurant.title;
       this.userName=this.orders.user.name;

@@ -28,35 +28,26 @@ httpOptions = {
     return body || { };
   }
 
-  getProducts(): Observable<any> {
+  getOrders(): Observable<any> {
     return this.http.get(this.endpoint + '').pipe(
       map(this.extractData));
   }
   
-  getProduct(id): Observable<any> {
-    return this.http.get(this.endpoint + 'products/' + id).pipe(
-      map(this.extractData));
-  }
+
+
   
-  addProduct (product): Observable<any> {
-    console.log(product);
-    return this.http.post<any>(this.endpoint + 'products', JSON.stringify(product), this.httpOptions).pipe(
-      tap((product) => console.log(`added product w/ id=${product.id}`)),
-      catchError(error)
-    );
-  }
+  updateorder (id, order): Observable<any> {
+    return this.http.post<any>(this.endpoint + '/items/' + id+'?user_id=2', JSON.stringify(order), this.httpOptions).pipe(
+      tap((product) => console.log(`added order w/ id=${id}`)),
+      catchError(error))
   
-  updateProduct (id, product): Observable<any> {
-    return this.http.put(this.endpoint + 'products/' + id, JSON.stringify(product), this.httpOptions).pipe(
-      tap(_ => console.log(`updated product id=${id}`)),
-      catchError(error)
-    );
   }
-  
-  deleteProduct (id): Observable<any> {
-    return this.http.delete<any>(this.endpoint + 'products/' + id, this.httpOptions).pipe(
+  deleteOrder (id): Observable<any> {
+    return this.http.delete<any>(this.endpoint + '/items/' + id+'?user_id=2', this.httpOptions).pipe(
       tap(_ => console.log(`deleted product id=${id}`)),
       catchError(error)
     );
   }
+  
+
 }

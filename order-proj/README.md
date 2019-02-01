@@ -1,27 +1,21 @@
-# OrderProj
+# Order App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## To Start steps
 
-## Code scaffolding
+1-Download order-app Folder
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2-Open the folder in visual studio code
 
-## Build
+3-Navigate to order-proj using this command in VS code Terminal `cd order-proj`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+4-Install node-modules using `npm install` 
 
-## Running unit tests
+5-To run the project run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Notes:- 
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Before Starting kindly add this extension https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en
+to allow CORS as there are some issues with local hosting and external Api's.

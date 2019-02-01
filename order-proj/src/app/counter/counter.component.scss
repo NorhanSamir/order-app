@@ -1,4 +1,8 @@
 @import '../../styles.scss';
+.counter-wrapper{
+    display: flex;
+    justify-content: center;
+
 .counter-number{
     height: 69px;
     padding: 0;
@@ -17,4 +21,13 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none !important;
     margin: 0 !important;
     -moz-appearance:textfield !important;
-}
+}}
+@media only screen and (max-width: 600px) {
+    .counter-wrapper{
+        .counter-number{
+            height: 40px;
+            width: 40px;
+            line-height: 40px
+        }
+    }
+    }

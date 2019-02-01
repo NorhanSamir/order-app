@@ -21,6 +21,7 @@ $dark-grey:#d8dde3;
 html{
     color: $font-color;
     font-family: 'regular';
+    font-size: 16px
 }
 main{
     background-color: $main-grey;
@@ -53,4 +54,18 @@ button{
 .right-radius{
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
+}
+@media only screen and (max-width: 600px) {
+html{
+    font-size: 14px;
+}
+.half-circle-btn{
+    padding: 10px;
+    background-color: $main-color;
+    border:0;
+  
+}
+main{
+    padding: 15px
+}
 }

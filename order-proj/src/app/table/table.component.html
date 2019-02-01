@@ -1,0 +1,17 @@
+<h1 class="item-title">{{resturantName}} , by {{userName}}</h1>
+<hr/>
+<table class="full-width">
+  <thead>
+  <th>Order items</th>
+  <th>Price</th>
+  <th class="txt-center">Quantity</th>
+</thead>
+<tbody>
+  <tr *ngFor="let order of orders.order_items">
+    <td>{{order.name}}</td>
+    <td>{{order.price}} EGP</td>
+    <td><app-counter [counter]=order.quantity></app-counter></td>
+  </tr>
+</tbody>
+
+</table>

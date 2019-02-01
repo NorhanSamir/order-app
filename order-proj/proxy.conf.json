@@ -1,0 +1,10 @@
+{
+    "/api": {
+    "target": "http://foodie.aqarmap.net/api/orders/115",
+    "secure": false,
+    "pathRewrite": {
+    "^/api": ""
+    },
+    "changeOrigin": true
+    }
+    }

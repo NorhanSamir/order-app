@@ -1,0 +1,44 @@
+
+//import fonts and normalize
+@import 'src/assets/scss/normalize.scss';
+@import 'src/assets/scss/icomoon.scss';
+/* You can add global styles to this file, and also import other style files */
+$main-color:#74c0e2;
+$main-grey:#f0f3f6;
+$font-color:#525f6e;
+$dark-grey:#d8dde3;
+html{
+    color: $font-color;
+}
+main{
+    background-color: $main-grey;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+hr{
+    border-color: $dark-grey;
+}
+//common classes
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+.half-circle-btn{
+    padding: 25px;
+    background-color: $main-color;
+    border:0;
+  
+}
+.txt-center{
+    text-align: center;
+}
+.left-radius{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.right-radius{
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
